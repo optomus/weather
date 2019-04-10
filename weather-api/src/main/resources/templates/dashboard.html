@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Commbank Weather Dashboard</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style>
+    div.container {
+      border: coral;
+      border-style: solid;
+    }
+
+    p.location {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .container .condition {
+
+    }
+  </style>
+</head>
+<body>
+
+<th:block th:each="weather : ${weathers}">
+  <div class="container">
+    <p class="location" th:text="${weather.location}"></p>
+    <p class="location">
+      <small th:text="${weather.condition}"></small>
+    </p>
+    <div class="condition" th:if="${weather.condition == 'Cloudy'}">
+      <img src="static/cloudy.jpeg">
+    </div>
+    <div class="condition" th:if="${weather.condition == 'Snow'}">
+      <img src="static/snow.jpeg">
+    </div>
+    <div class="condition" th:if="${weather.condition == 'Sunny'}">
+      <img src="static/sunny.jpeg">
+    </div>
+    <div class="condition" th:if="${weather.condition == 'Rain'}">
+      <img src="static/rainy.jpeg">
+    </div>
+  </div>
+</th:block>
+
+
+
+</body>
+</html>

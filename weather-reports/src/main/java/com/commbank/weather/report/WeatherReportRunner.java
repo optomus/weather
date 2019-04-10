@@ -1,0 +1,18 @@
+package com.commbank.weather.report;
+
+import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class WeatherReportRunner {
+
+  private static Logger logger = LoggerFactory.getLogger(WeatherReportRunner.class);
+
+  public static void main(String args[]) {
+    WeatherReportGenerator weatherReportGenerator = new FlatFormatReportGenerator();
+    List<String> reports = weatherReportGenerator.generateReport();
+    for (String report : reports) {
+      logger.info(report);
+    }
+  }
+}
