@@ -8,6 +8,27 @@ import com.commbank.weather.service.simulator.WeatherSimulator;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a simple implementation that will provided weather simulations for a pre-defined set of locations.
+ * The locations are,
+ * <ul>
+ *   <li>Sydney</li>
+ *   <li>Melbourne</li>
+ *   <li>Adelaide</li>
+ *   <li>Darwin</li>
+ *   <li>Perth</li>
+ *   <li>Hobart</li>
+ *   <li>Brisbane</li>
+ *   <li>Queenstown</li>
+ *   <li>Christchurch</li>
+ *   <li>Auckland</li>
+ *   <li>NewYork</li>
+ *   <li>LosAngeles</li>
+ * </ul>
+ *
+ * This implementation will utilise the {@link WeatherSimulator} to generate simulated weather
+ * conditions for the above given locations.
+ */
 public class SimpleWeatherService implements WeatherService {
 
   private WeatherSimulator weatherSimulator;

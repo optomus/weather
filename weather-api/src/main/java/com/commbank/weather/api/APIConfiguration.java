@@ -27,10 +27,10 @@ public class APIConfiguration {
   private ApiInfo apiInfo() {
     return new ApiInfo(
         "Commbank Weather API",
-        "Some custom description of API.",
+        "This API will provide weather report as REST web service.",
         "API 1.0",
         "T&C",
-        new Contact("Dash Nava", "", "dash.nava@gmail.com"),
+        new Contact("Dash Nava", "", "career.dash@gmail.com"),
         "", "", Collections.emptyList());
   }
 }

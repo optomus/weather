@@ -8,6 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * This controller will present the weather report as a visual re-presentation.
+ */
 @Controller
 public class DashboardController {
 

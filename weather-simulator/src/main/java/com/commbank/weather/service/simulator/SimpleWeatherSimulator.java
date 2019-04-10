@@ -13,6 +13,31 @@ import com.commbank.weather.service.simulator.adjustment.WeatherPredicateAdjustm
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is a simple implementation of a weather simulator.
+ *
+ * This implementation will randomly adjust variables used to forecast a weather condition. The variable that are adjusted are listed below.
+ *
+ * <ul>
+ *   <li>Position. This included adjustment of latitude, longitude and elevation. Refer {@link PositionPredicateAdjustment}</li>
+ *   <li>DateTime. The date time will be adjusted given a range of days. Refer {@link DateTimePredicateAdjustment}</li>
+ *   <li>Temperature. The temperature will be adjusted based on different time range. Refer {@link TemperaturePredicateAdjustment}</li>
+ *   <li>Humidity. The humidity will be adjusted randomly within give a range. Refer {@link HumidityPredicateAdjustment}</li>
+ *   <li>Pressure. The pressure will be adjusted randomly within a given range. Refer {@link PressurePredicateAdjustment}</li>
+ * </ul>
+ *
+ * The adjustments are carried out in an order. The order is listed below.
+ *
+ * <ol>
+ *   <li>Position</li>
+ *   <li>DateTime</li>
+ *   <li>Temperature</li>
+ *   <li>Humidity</li>
+ *   <li>Pressure</li>
+ * </ol>
+ *
+ * The weather condition {@link WeatherCondition} will be predicted based on the resulting temperature.
+ */
 public class SimpleWeatherSimulator implements WeatherSimulator {
 
   private List<WeatherPredicateAdjustment> adjustments = new ArrayList<>();

@@ -8,7 +8,11 @@ public class HighResolutionMapElevationResolver implements ElevationResolver {
   private final static int MAX_ELEVATION = 5000;
 
   /**
-   * The method will resolve the elevation from a high res map using longitude and latitude.
+   * The idea behind this implementation is to find the exact elevation for a given GEO location
+   * from a HIGH resolution image of a map.
+   *
+   * For the time being simulating the elevation by randomising within a range.
+   *
    */
   public double resolveElevation(double latitude, double longitude) {
     return randomNumber(MAX_ELEVATION, MIN_ELEVATION);
