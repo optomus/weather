@@ -28,7 +28,11 @@ This module compromises the services to serve the weather simulations as a REST 
 ### Pre-requisite
 * JDK 1.8
 * Maven 3
-* Access to internet (To download maven dependencies)
+* Access to internet (To download maven dependencies and plugins)
+### Environment Setup
+* Set JAVA_HOME environment variable
+* Set MAVEN_HOME environment variable
+* Include java and mvn executables in the user path
 ### How to build
 * Checkout the source code
 * Execute the following command from a terminal/command prompt to build
