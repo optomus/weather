@@ -4,28 +4,28 @@
 
 ## Abstract
 This assessment is implemented by modularising into logical components. The component details are listed below.
-###weather-domain
+### weather-domain
 This module compromises the domain objects related to this assessment
-###weather-simulator
+### weather-simulator
 This module compromises the business and infrastructure services to generate simulated weather.
-###weather-reports
+### weather-reports
 This module compromises the services to transform the weather simulations into flat report structure
 
-######Below is the snapshot of a sample flat record.
+###### Below is the snapshot of a sample flat record.
 
 ![Flat Weather Report](guide/FlatReport.PNG)
-###weather-api
+### weather-api
 This module compromises the services to serve the weather simulations as a REST web service and visually represent as a web application.
 
-######Below is the snapshot of the Swagger UI for the Weather Rest API.
+###### Below is the snapshot of the Swagger UI for the Weather Rest API.
 
 ![Flat Weather Report](guide/REST%20API.PNG)
 
-######Below is the snapshot of the visual representation from the web application.
+###### Below is the snapshot of the visual representation from the web application.
 
 ![Flat Weather Report](guide/Visual%20Representation.PNG)
 ## Build and Run
-###Pre-requisite
+### Pre-requisite
 * JDK 1.8
 * Maven 3
 * Access to internet (To download maven dependencies)
