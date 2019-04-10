@@ -15,7 +15,7 @@ public final class WeatherConditionCriteriaBuilder {
 
   public WeatherConditionCriteriaBuilder addLosAngelos() {
     weatherConditionCriteria
-        .add(new WeatherConditionCriteria(Location.LosAngelos, new Position(34.05, -118.24)));
+        .add(new WeatherConditionCriteria(Location.LosAngeles, new Position(34.05, -118.24)));
     return this;
   }
 
@@ -39,7 +39,7 @@ public final class WeatherConditionCriteriaBuilder {
 
   public WeatherConditionCriteriaBuilder addQueensTown() {
     weatherConditionCriteria
-        .add(new WeatherConditionCriteria(Location.QueensTown, new Position(-45.03, 168.66)));
+        .add(new WeatherConditionCriteria(Location.Queenstown, new Position(-45.03, 168.66)));
     return this;
   }
 

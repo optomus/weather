@@ -5,7 +5,6 @@ import static com.commbank.weather.service.util.WeatherUtil.randomNumber;
 import com.commbank.weather.domain.Location;
 import com.commbank.weather.domain.WeatherPredicate;
 import com.commbank.weather.service.domain.WeatherConditionCriteria;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.HashMap;
@@ -26,9 +25,9 @@ public class DateTimePredicateAdjustment implements WeatherPredicateAdjustment {
     this.timeZones.put(Location.Brisbane, ZoneId.of("Australia/Brisbane"));
     this.timeZones.put(Location.Hobart, ZoneId.of("Australia/Hobart"));
     this.timeZones.put(Location.Auckland, ZoneId.of("Pacific/Auckland"));
-    this.timeZones.put(Location.QueensTown, ZoneId.of("Pacific/Apia"));
+    this.timeZones.put(Location.Queenstown, ZoneId.of("Pacific/Apia"));
     this.timeZones.put(Location.Christchurch, ZoneId.of("Pacific/Apia"));
-    this.timeZones.put(Location.LosAngelos, ZoneId.of("America/Los_Angeles"));
+    this.timeZones.put(Location.LosAngeles, ZoneId.of("America/Los_Angeles"));
     this.timeZones.put(Location.NewYork, ZoneId.of("America/New_York"));
 
   }
