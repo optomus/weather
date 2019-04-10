@@ -13,10 +13,8 @@ public class PressurePredicateAdjustment implements WeatherPredicateAdjustment {
   private static double MAX_AVERAGE_PRESSURE = 1022;
   private static double MIN_AVERAGE_PRESSURE = 1010;
 
-  public void adjust(WeatherPredicate weatherPredicate,
-      WeatherConditionCriteria weatherConditionCriteria) {
+  public void adjust(WeatherPredicate weatherPredicate, WeatherConditionCriteria weatherConditionCriteria) {
     double pressure = randomNumber(MAX_AVERAGE_PRESSURE, MIN_AVERAGE_PRESSURE);
     weatherPredicate.setPressure(pressure);
-
   }
 }
