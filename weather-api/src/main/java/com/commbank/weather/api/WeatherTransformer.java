@@ -7,6 +7,7 @@ import com.commbank.weather.domain.Position;
 import com.commbank.weather.domain.Weather;
 import com.commbank.weather.domain.WeatherPredicate;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class WeatherTransformer {
       apiWeather.setLocation(weatherPredicate.getLocation().name());
       apiWeather.setPosition(position);
       apiWeather
-          .setDateTime(weatherPredicate.getLocalDateTime().format(DateTimeFormatter.ISO_INSTANT));
+          .setDateTime(weatherPredicate.getLocalDateTime().truncatedTo(ChronoUnit.SECONDS).format(DateTimeFormatter.ISO_INSTANT));
       apiWeather.setCondition(weather.getWeatherCondition().name());
       apiWeather.setTemperature(toTwoDecimalPoints(weatherPredicate.getTemperature()));
       apiWeather.setPressure(toTwoDecimalPoints(weatherPredicate.getPressure()));

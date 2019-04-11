@@ -24,6 +24,13 @@ This module compromises the services to serve the weather simulations as a REST 
 #### Below is the snapshot of the visual representation from the web application.
 
 ![Flat Weather Report](guide/Visual%20Representation.PNG)
+
+## High Level Design
+
+Below is the high level design of this implementation. 
+
+![Component Design](guide/comp_design.png)
+
 ## Build and Run
 ### Pre-requisite
 * JDK 1.8

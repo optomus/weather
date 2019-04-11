@@ -7,6 +7,8 @@ import com.commbank.weather.domain.WeatherPredicate;
 import com.commbank.weather.service.SimpleWeatherService;
 import com.commbank.weather.service.WeatherService;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
 import java.util.ArrayList;
 import java.util.List;
 import org.slf4j.Logger;
@@ -47,7 +49,7 @@ public class FlatFormatReportGenerator implements WeatherReportGenerator {
         .append(COMMA)
         .append(formatToTwoDecimalPoints(weatherPredicate.getPosition().getElevation()))
         .append(SEPARATOR)
-        .append(weatherPredicate.getLocalDateTime().format(DateTimeFormatter.ISO_INSTANT))
+        .append(weatherPredicate.getLocalDateTime().truncatedTo(ChronoUnit.SECONDS).format(DateTimeFormatter.ISO_INSTANT))
         .append(SEPARATOR)
         .append(weather.getWeatherCondition())
         .append(SEPARATOR)
