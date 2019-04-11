@@ -5,17 +5,17 @@
 ## Abstract
 This assessment is implemented by modularising into logical components. The component details are listed below.
 ### weather-domain
-This module compromises the domain objects related to this assessment
+This module comprises the domain objects related to this assessment
 ### weather-simulator
-This module compromises the business and infrastructure services to generate simulated weather.
+This module comprises the business and infrastructure services to generate simulated weather.
 ### weather-reports
-This module compromises the services to transform the weather simulations into flat report structure
+This module comprises the services to transform the weather simulations into flat report structure
 
 #### Below is the snapshot of a sample flat report.
 
 ![Flat Weather Report](guide/FlatReport.PNG)
 ### weather-api
-This module compromises the services to serve the weather simulations as a REST web service and visually represent as a web application.
+This module comprises the services to serve the weather simulations as a REST web service and visually represent as a web application.
 
 #### Below is the snapshot of the Swagger UI for the Weather Rest API.
 
