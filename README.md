@@ -11,7 +11,7 @@ This module compromises the business and infrastructure services to generate sim
 ### weather-reports
 This module compromises the services to transform the weather simulations into flat report structure
 
-#### Below is the snapshot of a sample flat record.
+#### Below is the snapshot of a sample flat report.
 
 ![Flat Weather Report](guide/FlatReport.PNG)
 ### weather-api
